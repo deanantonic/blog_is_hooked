@@ -1,0 +1,25 @@
+body {
+    background-image: url("http://www.pulsarwallpapers.com/data/media/3/Alien%20Ink%202560X1600%20Abstract%20Background.jpg");
+    color: black;
+    font-family: "Arial";   
+}
+
+p {
+    color: black;
+    font-family: "Arial";
+}
+
+
+
+a:link, a:visited {
+    background-color: none;
+    color: white;
+    padding: 1px 1px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover, a:active {
+    background-color: red;
+}
