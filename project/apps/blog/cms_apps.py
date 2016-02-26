@@ -4,7 +4,7 @@ from django.utils.translation import ugettext_lazy as _
 
 class BlogApphook(CMSApp):
     name = _("Blog Application")   # give your application a name (required)
-    urls = ["project.urls"]           # link your app to url configuration(s)
+    urls = ["blog.urls"]           # link your app to url configuration(s)
     app_name = "blog"
 
 
