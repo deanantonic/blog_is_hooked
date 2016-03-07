@@ -6,8 +6,15 @@ from django.shortcuts import render
 from blog.models import Blog, Category
 from django.shortcuts import render_to_response, get_object_or_404
 
+
 def index(request):
-    return render_to_response('index.html', {
+    return render(request, 'index.html')
+
+def single_project(request):
+    return render(request, 'single-project.html')
+
+def index1(request):
+    return render_to_response('index1.html', {
         'categories': Category.objects.all(),
         'posts': Blog.objects.all()[:5]
     })

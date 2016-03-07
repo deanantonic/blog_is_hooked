@@ -37,7 +37,8 @@ urlpatterns += i18n_patterns(
     # url(r'^$', 'blog.views.index'),	
     url(r'^blog/view/(?P<slug>[^\.]+).html', 'blog.views.view_post', name='view_blog_post'),
     url(r'^blog/category/(?P<slug>[^\.]+).html', 'blog.views.view_category', name='view_blog_category'),
-
+    url(r'^$', 'blog.views.index'),
+    url(r'^single-project', 'blog.views.single_project'),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^contact-us/', include('contact_form.urls')),
     url(r'^translate/', include('rosetta.urls')),
